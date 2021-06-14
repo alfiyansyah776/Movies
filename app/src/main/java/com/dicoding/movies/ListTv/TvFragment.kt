@@ -45,7 +45,7 @@ class TvFragment : Fragment(), TvFragmentCallback {
 
             }
 
-            viewModel.tvShows.observe(this, { tv ->
+            viewModel.getTvShows().observe(this, { tv ->
                 if (tv != null){
                     when (tv.status) {
                         Status.LOADING -> fragmentTvBinding.progressBar.visibility = View.VISIBLE

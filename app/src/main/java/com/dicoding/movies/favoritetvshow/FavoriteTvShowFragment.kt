@@ -43,7 +43,7 @@ class FavoriteTvShowFragment : Fragment(), TvFragmentCallback {
             val factory = ViewModelFactory.getInstance(requireActivity())
             favoriteTvShowViewModel = ViewModelProvider(this, factory)[FavoriteTvShowViewModel::class.java]
 
-            favoriteTvShowViewModel.favoriteTvShow.observe(viewLifecycleOwner, { dataTvShow ->
+            favoriteTvShowViewModel.getFavoritedTvShows().observe(viewLifecycleOwner, { dataTvShow ->
                 favoriteTvShowAdapter.submitList(dataTvShow)
                 binding.viewEmpty.root.visibility = if(dataTvShow.isNotEmpty()) View.GONE else View.VISIBLE
             })

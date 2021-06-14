@@ -11,14 +11,14 @@ object DataDummy {
 
         movies.add(
             Movies(
-                460465,
-                "/6Wdl9N6dL0Hi0T1qJLWSz6gMLbd.jpg",
+                337404,
+                "/rTh4K5uw9HypmpGslcKd4QfHl93.jpg",
                 "en",
-                "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
-                "Mortal Kombat",
-                "2021-04-07",
+                "In 1970s London amidst the punk rock revolution, a young grifter named Estella is determined to make a name for herself with her designs. She befriends a pair of young thieves who appreciate her appetite for mischief, and together they are able to build a life for themselves on the London streets. One day, Estella’s flair for fashion catches the eye of the Baroness von Hellman, a fashion legend who is devastatingly chic and terrifyingly haute. But their relationship sets in motion a course of events and revelations that will cause Estella to embrace her wicked side and become the raucous, fashionable and revenge-bent Cruella.",
+                "Cruella",
+                "2021-05-26",
                 false,
-                7.8
+                8.6
         )
         )
         movies.add(
@@ -35,14 +35,14 @@ object DataDummy {
         )
         movies.add(
             Movies(
-                615457,
-                "/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg",
+                423108,
+                "/xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg",
                 "en",
-                "Hutch Mansell, a suburban dad, overlooked husband, nothing neighbor — a \\\"nobody.\\\" When two thieves break into his home one night, Hutch's unknown long-simmering rage is ignited and propels him on a brutal path that will uncover dark secrets he fought to leave behind.",
-                "Nobody",
-                "2021-03-26",
+                "Paranormal investigators Ed and Lorraine Warren encounter what would become one of the most sensational cases from their files. The fight for the soul of a young boy takes them beyond anything they'd ever seen before, to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.",
+                "The Conjuring: The Devil Made Me Do It",
+                "2021-05-25",
                 false,
-                8.5
+                8.2
         )
         )
         return movies
@@ -53,40 +53,40 @@ object DataDummy {
 
         tvShows.add(
             TvShows(
-                88396,
-                "/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+                1399,
+                "/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
                 "en",
-                "Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
-                "The Falcon and the Winter Soldier",
-                "2017-09-25",
+                "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+                "Game of Thrones",
+                "2011-04-17",
                 false,
-                7.9
+                8.4
         )
         )
 
         tvShows.add(
             TvShows(
-                71712,
-                "/53P8oHo9cfOsgb1cLxBi4pFY0ja.jpg",
+                1416,
+                "/clnyhPqj1SNgpAdeSS6a6fwE6Bo.jpg",
                 "en",
-                "A young surgeon with Savant syndrome is recruited into the surgical unit of a prestigious hospital. The question will arise: can a person who doesn't have the ability to relate to people actually save their lives",
-                "The Good Doctor",
-                "2017-09-25",
+                "Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.",
+                "Gray Anatomy",
+                "2005-03-27",
                 false,
-                8.6
-        )
+                8.2
+            )
         )
 
         tvShows.add(
             TvShows(
-                79008,
-                "/34FaY8qpjBAVysSfrJ1l7nrAQaD.jpg",
-                "es",
-                "The series dramatizes the life story of Mexican superstar singer Luis Miguel, who has captivated audiences in Latin America and beyond for decades.",
-                "Luis Miguel : La Serie",
-                "2018-04-22",
+                60735,
+                "/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
+                "en",
+                "After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash.",
+                "The Flash",
+                "2014-10-07",
                 false,
-                8.0
+                7.7
         )
         )
 
@@ -111,13 +111,13 @@ object DataDummy {
         val movies = ArrayList<ResultsMovies>()
 
         movies.add(ResultsMovies(
-                "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
-                "en",
-                "Mortal Kombat",
-                "/6Wdl9N6dL0Hi0T1qJLWSz6gMLbd.jpg",
-                "2021-04-07",
-                7.8,
-                460465
+            "en",
+            "In 1970s London amidst the punk rock revolution, a young grifter named Estella is determined to make a name for herself with her designs. She befriends a pair of young thieves who appreciate her appetite for mischief, and together they are able to build a life for themselves on the London streets. One day, Estella’s flair for fashion catches the eye of the Baroness von Hellman, a fashion legend who is devastatingly chic and terrifyingly haute. But their relationship sets in motion a course of events and revelations that will cause Estella to embrace her wicked side and become the raucous, fashionable and revenge-bent Cruella.",
+            "Cruella",
+            "/rTh4K5uw9HypmpGslcKd4QfHl93.jpg",
+            "2021-05-26",
+            8.6,
+            337404
         ))
 
         movies.add(ResultsMovies(
@@ -132,13 +132,13 @@ object DataDummy {
         ))
 
         movies.add(ResultsMovies(
-                "Hutch Mansell, a suburban dad, overlooked husband, nothing neighbor — a \\\"nobody.\\\" When two thieves break into his home one night, Hutch's unknown long-simmering rage is ignited and propels him on a brutal path that will uncover dark secrets he fought to leave behind",
-                "en",
-                "Nobody",
-                "/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg",
-                "2021-03-26",
-                8.5,
-                615457
+            "Paranormal investigators Ed and Lorraine Warren encounter what would become one of the most sensational cases from their files. The fight for the soul of a young boy takes them beyond anything they'd ever seen before, to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.",
+            "en",
+            "The Conjuring: The Devil Made Me Do It",
+            "/xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg",
+            "2021-05-25",
+            8.2,
+            423108
 
         ))
 
@@ -149,34 +149,37 @@ object DataDummy {
         val tvShows = ArrayList<ResultsTvShows>()
 
         tvShows.add(ResultsTvShows(
-                "2017-09-25",
-                "Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
-                "en",
-                "/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
-                "The Falcon and the Winter Soldier",
-                88396,
-                7.9
-        ))
+            "2011-04-17",
+            "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+            "en",
+            "u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+            "Game of Thrones",
+            1399,
+            8.4
 
-        tvShows.add(ResultsTvShows(
-                "2017-09-25",
-                "A young surgeon with Savant syndrome is recruited into the surgical unit of a prestigious hospital. The question will arise: can a person who doesn't have the ability to relate to people actually save their lives",
-                "en",
-                "/53P8oHo9cfOsgb1cLxBi4pFY0ja.jpg",
-                "The Good Doctor",
-                71712,
-                8.6
+
 
         ))
 
         tvShows.add(ResultsTvShows(
-                "2018-04-22",
-                "The series dramatizes the life story of Mexican superstar singer Luis Miguel, who has captivated audiences in Latin America and beyond for decades.",
-                "es",
-                "/34FaY8qpjBAVysSfrJ1l7nrAQaD.jpg",
-                "Luis Miguel : La Serie",
-                79008,
-                8.0
+            "2005-03-27",
+            "Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.",
+            "en",
+            "/clnyhPqj1SNgpAdeSS6a6fwE6Bo.jpg",
+            "Gray Anatomy",
+            1416,
+            8.2
+
+        ))
+
+        tvShows.add(ResultsTvShows(
+            "2014-10-07",
+            "After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash.",
+            "en",
+            "/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
+            "The Flash",
+            60375,
+            7.7
         ))
 
         tvShows.add(ResultsTvShows(

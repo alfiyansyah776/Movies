@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding.tabs.setupWithViewPager(activityMainBinding.viewPager)
 
         supportActionBar?.elevation = 0f
+        supportActionBar?.title = "MyMoviesList"
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

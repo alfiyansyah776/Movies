@@ -44,7 +44,7 @@ class MoviesFragment : Fragment(), MoviesFragmentCallback {
                 startActivity(intent)
             }
 
-           viewModel.movie.observe(viewLifecycleOwner, { movies ->
+           viewModel.getMovies().observe(viewLifecycleOwner, { movies ->
                if (movies != null){
                    when (movies.status){
                        Status.LOADING -> fragmentMoviesBinding.progressBar.visibility = View.VISIBLE

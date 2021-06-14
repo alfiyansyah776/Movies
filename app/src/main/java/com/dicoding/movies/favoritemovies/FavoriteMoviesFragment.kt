@@ -43,7 +43,7 @@ class FavoriteMoviesFragment : Fragment(), MoviesFragmentCallback {
             val factory = ViewModelFactory.getInstance(requireActivity())
             favoriteMoviesViewModel = ViewModelProvider(this, factory)[FavoriteMoviesViewModel::class.java]
 
-            favoriteMoviesViewModel.favoriteMovies.observe(viewLifecycleOwner, { movies ->
+            favoriteMoviesViewModel.getFavoritedMovies().observe(viewLifecycleOwner, { movies ->
                 favoriteMoviesAdapter.submitList(movies)
                 binding.viewEmpty.root.visibility = if (movies.isNotEmpty()) View.GONE else View.VISIBLE
 

@@ -4,6 +4,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.IdlingRegistry
+import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions
@@ -38,8 +39,8 @@ class MainActivityTest{
 
     @Test
     fun loadDetailMovies(){
-        onView(withText("Movies")).perform(click())
-        onView(withId(R.id.rv_movies)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(3, click()))
+        onView(withText("Movie")).perform(click())
+        onView(withId(R.id.rv_movies)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(1, click()))
         onView(withId(R.id.text_title)).check(matches(isDisplayed()))
         onView(withId(R.id.text_synopsis)).check(matches(isDisplayed()))
         onView(withId(R.id.imageView)).check(matches(isDisplayed()))
@@ -68,14 +69,25 @@ class MainActivityTest{
     }
 
     @Test
-    fun loadFavoritedTvShows(){
-
+    fun loadFavoritedMovies(){
+        onView(withText("Movie")).perform(click())
+        onView(withId(R.id.rv_movies)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(1, click()))
+        onView(withId(R.id.fab_favorite)).perform(click())
+        onView(isRoot()).perform(ViewActions.pressBack())
+        onView(withId(R.id.favorite)).perform(click())
+        onView(withId(R.id.rv_movies)).check(matches(isDisplayed()))
     }
 
     @Test
-    fun loadFavoritedMovies(){
+    fun loadFavoritedTvShows(){
+        onView(withText("Tv Shows")).perform(click())
+        onView(withId(R.id.rv_tv)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(2, click()))
+        onView(withId(R.id.fab_favorite)).perform(click())
+        onView(isRoot()).perform(ViewActions.pressBack())
+        onView(withId(R.id.favorite)).perform(click())
+        onView(withText("Tv Shows")).perform(click())
+        onView(withId(R.id.rv_tv)).check(matches(isDisplayed()))
 
     }
-
 
 }

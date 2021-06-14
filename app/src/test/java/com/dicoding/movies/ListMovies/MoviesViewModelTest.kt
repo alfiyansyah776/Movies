@@ -51,29 +51,15 @@ class MoviesViewModelTest {
 
         `when`(moviesRepository.getAllMovies()).thenReturn(expected)
 
-        viewModel.movie.observeForever(observer)
+        viewModel.getMovies().observeForever(observer)
         verify(observer).onChanged(expected.value)
 
         val expectedValue = expected.value
-        val actualValue = viewModel.movie.value
+        val actualValue = viewModel.getMovies().value
         assertEquals(expectedValue, actualValue)
         assertEquals(expectedValue?.data, actualValue?.data)
         assertEquals(expectedValue?.data?.size, actualValue?.data?.size)
-        /*val dummyMovies = Resource.success(pagedList)
-        `when`(dummyMovies.data?.size).thenReturn(3)
-        val listMoviesData = MutableLiveData<Resource<PagedList<Movies>>>()
-        listMoviesData.value = dummyMovies
 
-        `when`(moviesRepository.getAllMovies()).thenReturn(listMoviesData)
-        viewModel.movie
-        verify(moviesRepository).getAllMovies()
-
-        val moviesEntity = viewModel.movie.value?.data
-        assertNotNull(moviesEntity)
-        assertEquals(3, moviesEntity?.size)
-
-        viewModel.movie.observeForever(observer)
-        verify(observer).onChanged(dummyMovies)*/
 
     }
 
