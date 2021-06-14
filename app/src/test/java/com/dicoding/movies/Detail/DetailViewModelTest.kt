@@ -22,9 +22,7 @@ import org.mockito.junit.MockitoJUnitRunner
 class DetailViewModelTest {
     private lateinit var viewModel: DetailViewModel
     private val dummyMovies = DataDummy.generateDummyMovies()[0]
-    private val movieId = dummyMovies.moviesId
     private val dummyTvShows = DataDummy.generateDummyTvShows()[0]
-    private val tvId = dummyTvShows.tvId
 
 
     @Mock
@@ -40,51 +38,27 @@ class DetailViewModelTest {
     @Mock
     private lateinit var moviesObserver : Observer<Movies>
 
+
     @Before
     fun setUp(){
         viewModel = DetailViewModel(moviesRepository)
-        viewModel.setSelectedMovies(movieId)
-        viewModel.setSelectedTvShows(tvId)
+
     }
 
     @Test
-    fun getMovies(){
-        val moviesData = MutableLiveData<Movies>()
-        moviesData.value = dummyMovies
+    fun setFavoriteMovies(){
+        viewModel.setFavoriteMovies(dummyMovies, true)
+        verify(moviesRepository).setFavoriteMovie(dummyMovies, true)
 
-        Mockito.`when`(moviesRepository.getMoviesWithId(movieId)).thenReturn(moviesData)
-        val movieEntity = viewModel.getMovies().value as Movies
-        verify(moviesRepository).getMoviesWithId(movieId)
-        assertNotNull(movieEntity)
-        assertEquals(dummyMovies.title, movieEntity.title)
-        assertEquals(dummyMovies.synopsis, movieEntity.synopsis)
-        assertEquals(dummyMovies.aired, movieEntity.aired)
-        assertEquals(dummyMovies.language, movieEntity.language)
-        assertEquals(dummyMovies.poster, movieEntity.poster)
-        assertEquals(dummyMovies.score, movieEntity.score)
-
-        viewModel.getMovies().observeForever(moviesObserver)
-        verify(moviesObserver).onChanged(dummyMovies)
     }
 
     @Test
-    fun getTv(){
-        val tvShowData = MutableLiveData<TvShows>()
-        tvShowData.value = dummyTvShows
+    fun setFavoriteTvShows(){
+        viewModel.setFavoriteTvShows(dummyTvShows, true)
+        verify(moviesRepository).setFavoriteTvShow(dummyTvShows, true)
 
-        Mockito.`when`(moviesRepository.getTvShowsWithId(tvId)).thenReturn(tvShowData)
-        val tvEntity = viewModel.getTvShows().value as TvShows
-        verify(moviesRepository).getTvShowsWithId(tvId)
-        assertNotNull(tvEntity)
-        assertEquals(dummyTvShows.title, tvEntity.title)
-        assertEquals(dummyTvShows.synopsis, tvEntity.synopsis)
-        assertEquals(dummyTvShows.aired, tvEntity.aired)
-        assertEquals(dummyTvShows.language, tvEntity.language)
-        assertEquals(dummyTvShows.poster, tvEntity.poster)
-        assertEquals(dummyTvShows.score, tvEntity.score)
-
-        viewModel.getTvShows().observeForever(tvObserver)
-        verify(tvObserver).onChanged(dummyTvShows)
     }
+
+
 
 }

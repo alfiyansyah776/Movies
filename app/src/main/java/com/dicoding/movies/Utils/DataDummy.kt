@@ -6,7 +6,7 @@ import com.dicoding.movies.data.source.remote.response.ResultsMovies
 import com.dicoding.movies.data.source.remote.response.ResultsTvShows
 
 object DataDummy {
-    fun generateDummyMovies(): ArrayList<Movies>{
+    fun generateDummyMovies(): List<Movies>{
         val movies = ArrayList<Movies>()
 
         movies.add(
@@ -48,7 +48,7 @@ object DataDummy {
         return movies
     }
 
-    fun generateDummyTvShows(): ArrayList<TvShows>{
+    fun generateDummyTvShows(): List<TvShows>{
         val tvShows = ArrayList<TvShows>()
 
         tvShows.add(
@@ -107,7 +107,7 @@ object DataDummy {
 
     }
 
-    fun generateRemoteDummyMovies(): ArrayList<ResultsMovies> {
+    fun generateRemoteDummyMovies(): List<ResultsMovies> {
         val movies = ArrayList<ResultsMovies>()
 
         movies.add(ResultsMovies(
@@ -145,7 +145,7 @@ object DataDummy {
         return movies
     }
 
-    fun generateRemoteTvShows(): ArrayList<ResultsTvShows>{
+    fun generateRemoteTvShows(): List<ResultsTvShows>{
         val tvShows = ArrayList<ResultsTvShows>()
 
         tvShows.add(ResultsTvShows(

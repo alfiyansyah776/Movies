@@ -67,5 +67,15 @@ class MainActivityTest{
         onView(withId(R.id.statusvalue)).check(matches(isDisplayed()))
     }
 
+    @Test
+    fun loadFavoritedTvShows(){
+
+    }
+
+    @Test
+    fun loadFavoritedMovies(){
+
+    }
+
 
 }
